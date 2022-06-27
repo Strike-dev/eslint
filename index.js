@@ -1,10 +1,10 @@
 module.exports = {
-	"plugins": ["import"],
-	"extends": [
-		"plugin:@typescript-eslint/recommended",
-		"prettier",
+  "plugins": ["import"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
 	],
-	"settings": {
+  "settings": {
     "import/resolver": {
       "node": {
         "extensions": [
@@ -17,18 +17,18 @@ module.exports = {
       }
     }
   },
-	"rules": {
-		"camelcase": 2,
+  "rules": {
+    "camelcase": 2,
     "prefer-destructuring": 2,
     "no-nested-ternary": 2,
     "comma-dangle": 0,
-		"@typescript-eslint/ban-ts-comment": 2,
+    "@typescript-eslint/ban-ts-comment": 2,
     "@typescript-eslint/no-explicit-any": 2,
     "@typescript-eslint/explicit-module-boundary-types": 0,
-		"@typescript-eslint/indent": 0,
+    "@typescript-eslint/indent": 0,
     "@typescript-eslint/no-unused-vars": 0,
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
-		"react-hooks/rules-of-hooks": 2,
+    "react-hooks/rules-of-hooks": 2,
     "react-hooks/exhaustive-deps": ["error"],
     "import/no-extraneous-dependencies": 2,
     "import/extensions": ["error", "never", { "svg": "always" }],
@@ -46,5 +46,5 @@ module.exports = {
     "import/no-anonymous-default-export": 2,
     "jest/no-identical-title": 2,
     "jest/valid-expect": 2,
-	}
+  }
 };
