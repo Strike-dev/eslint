@@ -1,9 +1,8 @@
 module.exports = {
-  "plugins": ["import"],
+  "plugins": ["import", "import-quotes"],
   "extends": [
     "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "import-quotes"
+    // "prettier",
 	],
   "settings": {
     "import/resolver": {
